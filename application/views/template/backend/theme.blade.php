@@ -177,13 +177,15 @@ stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/boots
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{ site_url('backend/dashboard')}}">
-              <span data-feather="home" class="align-text-bottom"></span>
+            <i class="bi bi-house-door"></i>
+            <span data-feather="home" class="align-text-bottom"></span>
               Dashboard
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ site_url('backend/Article/list')}}">
-              <span data-feather="file" class="align-text-bottom"></span>
+            <a class="nav-link" href="{{ site_url('backend/Article/list') }}">
+            <i class="bi bi-list-ul"></i>
+            <span data-feather="file" class="align-text-bottom"></span>
               List Article
             </a> 
           </li>
