@@ -2,15 +2,10 @@
 
 @section('content')
 
-@forelse($post_list as $post)
-
 <article class="blog-post">
         <h2 class="display-5 link-body-emphasis mb-1">{{ $post->title }}</h2>
         <p class="blog-post-meta">{{ $post->created_at->isoFormat('MMMM DD, YYYY h:mm:ss a') }}</p>
-        <p class="blog-post-meta">{{ substr($post->article , 0 , 300 )}}</p>
-        <a href={{ site_url('post/baca/' . $post->id) }}>Read More</a>
+        <p class="blog-post-meta">{{ ($post->article)}}</p>
       </article>
-@empty
-<div class="alert alert-info">Artikel yang anda cari tidak tersedia </div>
-@endforelse
+
 @endsection
